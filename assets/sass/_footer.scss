@@ -1,0 +1,99 @@
+.footer {
+   color: #fff;
+   background-color: var(--color-bg-chil);
+   border-bottom: 0.3rem solid #333333;
+   &__box {
+      height: 32rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   &__logo {
+      color: var(--primary-color);
+      font-size: 3.2rem;
+      font-weight: 900;
+      position: relative;
+      &::after {
+         content: '';
+         position: absolute;
+         top: -12rem;
+         right: -10rem;
+         background-color: #333333;
+         width: 0.5rem;
+         height: 25rem;
+      }
+   }
+   &__contact {
+      &--heading {
+         font-size: 3.2rem;
+         font-weight: bold;
+         margin-bottom: 3rem;
+      }
+      &--content {
+         display: flex;
+         align-items: center;
+         gap: 7.5rem;
+         .contact-left {
+            a {
+               color: #fff;
+               display: block;
+               font-size: 2.2rem;
+               text-decoration: none;
+               &:hover {
+                  opacity: 0.8;
+               }
+            }
+            a:nth-child(1) {
+               margin-bottom: 1rem;
+            }
+            a:nth-child(2) {
+               margin-bottom: 1rem;
+            }
+         }
+         .contact-right {
+            a {
+               color: #fff;
+               display: block;
+               font-size: 2.2rem;
+               text-decoration: none;
+               &:hover {
+                  opacity: 0.8;
+               }
+            }
+            a:nth-child(1) {
+               margin-bottom: 1rem;
+            }
+            a:nth-child(2) {
+               margin-bottom: 1rem;
+            }
+         }
+      }
+   }
+   &__sub {
+      &--heading {
+         font-size: 3.2rem;
+         font-weight: bold;
+         margin-bottom: 3rem;
+      }
+      &--content {
+         margin-bottom: 4rem;
+      }
+      .btn-footer {
+         input {
+            color: #fff;
+            background-color: var(--color-bg);
+            border: none;
+            outline: none;
+            padding: 1rem 2rem;
+         }
+         span {
+            background-color: var(--primary-color);
+            padding: 1rem 2rem;
+            cursor: pointer;
+            &:hover {
+               opacity: 0.8;
+            }
+         }
+      }
+   }
+}
