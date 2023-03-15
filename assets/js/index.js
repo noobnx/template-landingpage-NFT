@@ -21,13 +21,14 @@ arrowRight.addEventListener('click', function () {
 });
 function handleChangeSlide(direction) {
    if (direction === 'right') {
-      index++;
-      if (index >= boxcardItemsLenght) {
-         index = boxcardItemsLenght;
-         return;
-      }
-      postionX = postionX - boxcardItemsWidth - 185;
-      boxCardMain.style = `transform: translateX(${postionX}px)`;
+      // console.log(boxcardItemsWidth);
+      // index++;
+      // if (index >= boxcardItemsLenght) {
+      //    index = boxcardItemsLenght;
+      //    return;
+      // }
+      // postionX = postionX - boxcardItemsWidth - 185;
+      // boxCardMain.style = `transform: translateX(${postionX}px)`;
    } else if (direction === 'left') {
       // index--;
       // if (index <= 0) {

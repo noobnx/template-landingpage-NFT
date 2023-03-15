@@ -1,4 +1,4 @@
-@media (min-width: 600px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 1024px) {
    .header {
       &__nav {
          .header__list {
@@ -17,6 +17,7 @@
    .hero {
       margin-bottom: 0;
       flex-direction: column;
+      height: 100%;
       &__about {
          display: none;
       }
@@ -31,9 +32,16 @@
       }
    }
    .auctions {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      &__container {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         position: relative;
+         padding-top: 5rem;
+         .arrow {
+            display: flex;
+         }
+      }
       &__heading {
          justify-content: center;
          .title {
@@ -42,9 +50,6 @@
          .nav {
             display: none;
          }
-      }
-      .arrow {
-         display: flex;
       }
       &__content {
          width: 36.5rem;
@@ -132,6 +137,212 @@
          }
          &--content {
             font-size: 2.2rem;
+         }
+         .btn-footer {
+            input {
+               margin-bottom: 1rem;
+            }
+            span {
+               display: inline-block;
+            }
+         }
+      }
+   }
+}
+@media (max-width: 599px) {
+   .wrapper {
+      width: 100%;
+      padding: 2rem;
+   }
+   .container {
+      padding: 1rem;
+   }
+   .header {
+      &__nav {
+         .header__list {
+            display: none;
+         }
+      }
+      &__search {
+         .icon-search {
+            display: none;
+         }
+         .pay-ment {
+            display: none;
+         }
+      }
+   }
+   .hero {
+      margin-bottom: 0;
+      flex-direction: column;
+      &__about {
+         display: none;
+      }
+      &__img {
+         flex-direction: column;
+         gap: 4rem;
+         &--container {
+            margin: auto;
+            padding: 0.5rem 1rem;
+         }
+         &--heading {
+            .title {
+               font-size: 0.9rem;
+            }
+            .text-italic {
+               font-size: 0.8rem;
+            }
+         }
+         &--avatar {
+            img {
+               width: 100%;
+            }
+         }
+         &--followers {
+            display: flex;
+            align-items: center;
+            gap: 5rem;
+            .text-heading {
+               font-size: 1.2rem;
+            }
+            .text-italic {
+               font-size: 1rem;
+            }
+         }
+         &--time {
+            .time,
+            .price {
+               font-size: 1.2rem;
+            }
+         }
+         &--text {
+            .text-italic {
+               font-size: 1rem;
+            }
+         }
+      }
+   }
+   .auctions {
+      &__container {
+         padding-top: 5rem;
+      }
+      &__heading {
+         justify-content: center;
+         .title {
+            text-align: center;
+         }
+         .nav {
+            display: none;
+         }
+      }
+      &__content {
+         .auctions-box {
+            width: 100%;
+            flex-direction: column;
+            gap: 2rem;
+         }
+         .box-card {
+            flex: 1 0 100%;
+            .products {
+               img {
+                  width: 100%;
+               }
+            }
+            .introduce {
+               text-align: center;
+            }
+            .price {
+               flex-direction: column;
+               gap: 1rem;
+            }
+         }
+      }
+   }
+   .intro {
+      &__heading {
+         display: none;
+      }
+      &__content {
+         position: relative;
+         flex-direction: column;
+         gap: 2rem;
+         .intro-box:nth-child(2) {
+            display: none;
+         }
+         .intro-box:nth-child(3) {
+            display: none;
+         }
+         .intro-box {
+            margin-top: 12.5rem;
+            flex: 1 0 100%;
+            .products {
+               img {
+                  width: 100%;
+               }
+            }
+            .introduce {
+               text-align: center;
+            }
+            .price {
+               flex-direction: column;
+               gap: 1rem;
+            }
+         }
+      }
+   }
+   .creators {
+      &__box {
+         flex-direction: column;
+         margin-bottom: 0;
+      }
+      &__users {
+         width: 100%;
+         flex: 1 0 100%;
+         flex-wrap: wrap;
+         margin-bottom: 2rem;
+      }
+   }
+   .community {
+      width: 100%;
+      &__heading {
+         display: none;
+      }
+      &__content {
+         img {
+            display: none;
+         }
+      }
+   }
+   .footer {
+      &__box {
+         padding-bottom: 1rem;
+         flex-direction: column;
+      }
+      &__logo {
+         &::after {
+            display: none;
+         }
+      }
+      &__contact {
+         display: none;
+      }
+      &__sub {
+         margin: auto;
+         text-align: center;
+         &--heading {
+            margin-bottom: 1rem;
+         }
+         &--content {
+            font-size: 2.2rem;
+         }
+         .btn-footer {
+            input {
+               color: #000;
+               margin-bottom: 1rem;
+            }
+            span {
+               display: inline-block;
+            }
          }
       }
    }

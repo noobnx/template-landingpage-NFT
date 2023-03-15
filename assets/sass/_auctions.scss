@@ -45,14 +45,12 @@
       }
    }
    .arrow {
-      width: 49.8rem;
+      width: 50rem;
       position: absolute;
       top: 50%;
-      left: -5%;
       display: none;
       align-items: center;
       justify-content: space-between;
-      z-index: 11;
       cursor: pointer;
       i {
          color: var(--color-white);
